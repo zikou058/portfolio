@@ -21,7 +21,8 @@ contactForm.addEventListener('submit', function(event) {
             submitBtn.innerHTML = 'Sent!';
             this.reset(); // Clears the form fields
         }, (error) => {
-            console.log('FAILED....', error);
-            alert('Send failed. Check console for details.');
+            btn.innerHTML = 'Send Failed ❌';
+            console.log('Error:', error);
+            alert('Error: ' + error.text);
         });
 });
