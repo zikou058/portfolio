@@ -63,3 +63,17 @@ const b4 = () => {
 const hireme3 = () => {
     window.location.href = "contact.html";
 };
+// function toggleMenu() {
+//     const sidebar = document.getElementById('mobile-sidebar');
+//     const overlay = document.getElementById('menu-overlay');
+//     sidebar.classList.toggle('translate-x-full');
+//     sidebar.classList.toggle('translate-x-0');
+    
+//     if (overlay.classList.contains('hidden')) {
+//         overlay.classList.remove('hidden');
+//         setTimeout(() => overlay.classList.add('opacity-100'), 10);
+//     } else {
+//         overlay.classList.remove('opacity-100');
+//         setTimeout(() => overlay.classList.add('hidden'), 300);
+//     }
+// }
