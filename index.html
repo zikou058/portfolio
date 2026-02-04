@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zakaria Mennis | DevPortfolio</title>
+<script src="script.js" defer type="module"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#25d1f4",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0a0f12", // Slightly darker for higher contrast
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .mesh-gradient {
+            background-color: #0a0f12;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(37, 209, 244, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(37, 209, 244, 0.1) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(139, 92, 246, 0.1) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Main Layout Container -->
+<div class="relative min-h-screen w-full flex flex-col overflow-hidden mesh-gradient">
+<!-- Navigation -->
+<header class="relative z-50 flex items-center justify-between px-6 py-6 lg:px-20">
+<div class="flex items-center gap-3">
+<div class="size-10 flex items-center justify-center bg-primary rounded-lg shadow-[0_0_20px_rgba(37,209,244,0.4)]">
+<span class="material-symbols-outlined text-background-dark font-bold">terminal</span>
+</div>
+<h2 class="text-xl font-bold tracking-tighter uppercase">Dev</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-lg font-medium hover text-primary :text-primary transition-colors" href="index.html">Home</a>
+<a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-lg font-medium hover:text-primary transition-colors" href="project.html">Project</a>
+<a class="text-lg font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button id="hireme1" class="text-black hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary border border-white/10 hover:bg-primary/10 hover:text-white transition-all text-sm font-bold">
+                    Hire Me
+                </button>
+</div>
+</header>
+<!-- Hero Content Section -->
+<main class="flex-1 flex flex-col items-center justify-center px-6 lg:px-20 py-12 relative">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-7xl w-full">
+<!-- Left: Typography & CTA -->
+<div class="lg:col-span-6 flex flex-col gap-8 z-20">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+<span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-bold text-primary tracking-widest uppercase">Available for Hire</span>
+</div>
+<div class="flex flex-col gap-4">
+<h1 class="text-6xl lg:text-8xl font-black leading-none tracking-tight">
+                            Zakaria <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Mennis</span>
+</h1>
+<h2 class="text-xl lg:text-2xl text-slate-400 font-light max-w-md">
+                            Frontend Developer &amp; Creative Technologist. Building <span class="text-white">immersive digital experiences</span> with futuristic.
+                        </h2>
+</div>
+<div class="flex flex-wrap gap-4 pt-4">
+<button id="hireme1" class="group relative flex items-center justify-center rounded-lg h-14 px-10 bg-primary text-background-dark text-lg font-bold tracking-tight overflow-hidden hover:shadow-[0_0_30px_rgba(37,209,244,0.5)] transition-all">
+<span class="relative z-10">Hire Me</span>
+</button>
+<button id="viewwork" class="flex items-center justify-center rounded-lg h-14 px-10 bg-white/5 border border-white/10 hover:bg-white/10 text-lg font-bold tracking-tight glass transition-all">
+                            View Work
+                        </button>
+</div>
+<!-- Tech Stack Pills -->
+<div class="flex flex-wrap gap-3 mt-8">
+<span class="glass px-4 py-2 rounded-full text-xs font-mono text-slate-400 uppercase tracking-widest flex items-center gap-2">
+<span class="text-primary">#</span> React.js
+                        </span>
+<span class="glass px-4 py-2 rounded-full text-xs font-mono text-slate-400 uppercase tracking-widest flex items-center gap-2">
+<span class="text-primary">#</span> Ecmascript
+                        </span>
+<span class="glass px-4 py-2 rounded-full text-xs font-mono text-slate-400 uppercase tracking-widest flex items-center gap-2">
+<span class="text-primary">#</span> Tailwind
+                        </span>
+</div>
+</div>
+<!-- Right: Futuristic Scene Area -->
+<div class="lg:col-span-6 relative flex justify-center items-center @container h-[500px] lg:h-[700px]">
+<!-- Main Image Placeholder (Avatar at Floating Desk) -->
+<div class="relative w-full h-full glass rounded-3xl overflow-hidden shadow-2xl border-white/5 bg-center bg-cover " data-alt="Futuristic 3D developer avatar sitting at a holographic desk with a glowing laptop" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDubYq0xdp-L5mTpTpOoz84Aqo7fhcrXw1ae-hO3b3jDvDB_JVmPGYkVwij1mS_bC8HqCF3WincYtxCzvEverke0U_YMLEekVYtb9UDgOI0XxUHfGwTRSrDj513OPyOL27Iq7Mr8SC2C9ysShVqhdSlxkkzSDFlo1_BLgEhalT3PwplFizkJjENCAtWHOB6n_L1zHeJHaBlaWBMkEorizYVWLxxiAXF-Fn6vBnqFKhmaU5cKzGkQFDTG7xT5T63hFs7CEHPOHNnEwK6');">
+<!-- Overlay gradient for integration -->
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent"></div>
+<!-- Floating Code Snippet Card -->
+<div class="absolute top-10 right-10 glass p-4 rounded-xl max-w-[200px] shadow-2xl border-white/20">
+<div class="flex gap-1.5 mb-2">
+<div class="size-2 rounded-full bg-red-500/50"></div>
+<div class="size-2 rounded-full bg-yellow-500/50"></div>
+<div class="size-2 rounded-full bg-green-500/50"></div>
+</div>
+<code class="text-[10px] font-mono text-primary leading-relaxed">
+                                const profile = {<br/>
+                                  name: 'Zakaria',<br/>
+                                  status: 'coding'<br/>
+                                };
+                            </code>
+</div>
+<!-- UI Window Frame Ornaments -->
+<div class="absolute bottom-10 left-10 glass p-3 rounded-lg border-primary/30 flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm">monitoring</span>
+<div class="h-1.5 w-16 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-4/5 bg-primary"></div>
+</div>
+</div>
+<span class="text-[10px] uppercase tracking-tighter text-slate-400 font-bold">Optimization: 98%</span>
+</div>
+</div>
+<!-- Background Glow Elements -->
+<div class="absolute -z-10 w-[150%] h-[150%] bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="absolute top-1/4 -right-20 w-64 h-64 bg-purple-600/20 rounded-full blur-[100px]"></div>
+</div>
+</div>
+</main>
+<!-- Feature Expertise Section (Brief Integration) -->
+<section class="relative z-10 px-6 lg:px-20 py-16 border-t border-white/5">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 p-8 rounded-2xl glass hover:border-primary/50 transition-all group">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">palette</span>
+<h3 class="text-xl font-bold">UI/UX Design</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Crafting intuitive interfaces using modern principles of glassmorphism and motion design.</p>
+</div>
+<div class="flex flex-col gap-4 p-8 rounded-2xl glass hover:border-primary/50 transition-all group">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">code</span>
+<h3 class="text-xl font-bold">Frontend Engineering</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Building robust, scalable applications with React and high-performance frontend logic.</p>
+</div>
+<div class="flex flex-col gap-4 p-8 rounded-2xl glass hover:border-primary/50 transition-all group">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">view_in_ar</span>
+<h3 class="text-xl font-bold">Motion & Interaction</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Enhancing frontend experiences with motion design, micro-interactions, and fluid UI behavior.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="mt-auto px-6 py-10 lg:px-20 border-t border-white/5">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500 text-sm">© 2024  Designed for the spatial web.</p>
+<div class="flex items-center gap-8">
+<a class="text-slate-400 hover:text-white transition-colors" href="https://www.linkedin.com/in/mennis-zakaria-0xxclauy">
+<span class="text-sm ">LinkedIn</span>
+</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="https://github.com/zikou058">
+<span class="text-sm ">GitHub</span>
+</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="https://www.instagram.com/0xxclauy/">
+<span class="text-sm ">Instagram</span>
+</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
