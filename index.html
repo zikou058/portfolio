@@ -54,23 +54,29 @@
 <div class="relative min-h-screen w-full flex flex-col overflow-hidden mesh-gradient">
 <!-- Navigation -->
 <header class="relative z-50 flex items-center justify-between px-6 py-6 lg:px-20">
-<div class="flex items-center gap-3">
-<div class="size-10 flex items-center justify-center bg-primary rounded-lg shadow-[0_0_20px_rgba(37,209,244,0.4)]">
-<span class="material-symbols-outlined text-background-dark font-bold">terminal</span>
-</div>
-<h2 class="text-xl font-bold tracking-tighter uppercase">Dev</h2>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-lg font-medium hover text-primary :text-primary transition-colors" href="index.html">Home</a>
-<a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">About</a>
-<a class="text-lg font-medium hover:text-primary transition-colors" href="project.html">Project</a>
-<a class="text-lg font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
-</nav>
-<div class="flex items-center gap-4">
-<button id="hireme1" class="text-black hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary border border-white/10 hover:bg-primary/10 hover:text-white transition-all text-sm font-bold">
-                    Hire Me
-                </button>
-</div>
+    <div class="flex items-center gap-3">
+        <div class="size-10 flex items-center justify-center bg-primary rounded-lg shadow-[0_0_20px_rgba(37,209,244,0.4)]">
+            <span class="material-symbols-outlined text-background-dark font-bold">terminal</span>
+        </div>
+        <h2 class="text-xl font-bold tracking-tighter uppercase">Dev</h2>
+    </div>
+
+    <nav class="hidden md:flex items-center gap-10">
+        <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+        <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">About</a>
+        <a class="text-lg font-medium text-primary hover:text-primary transition-colors" href="project.html">Project</a>
+        <a class="text-lg font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+        <button class="text-black hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary border border-white/10 hover:bg-primary/10 hover:text-white transition-all text-sm font-bold">
+            Hire Me
+        </button>
+
+        <button onclick="toggleMenu()" class="lg:hidden flex items-center justify-center p-2 rounded-lg bg-primary/10 border border-primary/20 text-primary transition-all active:scale-95">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
 </header>
 <!-- Hero Content Section -->
 <main class="flex-1 flex flex-col items-center justify-center px-6 lg:px-20 py-12 relative">
@@ -185,5 +191,40 @@
 </div>
 </div>
 </footer>
+<div id="menu-overlay" onclick="toggleMenu()" class="fixed inset-0 bg-background-dark/80 backdrop-blur-sm z-[60] hidden opacity-0 transition-opacity duration-300 lg:hidden"></div>
+
+<nav id="mobile-sidebar" class="fixed top-0 right-0 h-full w-[75%] max-w-sm z-[70] 
+             bg-background-dark/95 border-l border-white/10
+             transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden glass-card">
+    <div class="flex flex-col p-8 mt-10 space-y-6">
+        <div class="flex justify-between items-center mb-6">
+            <span class="text-primary font-bold tracking-tighter uppercase">Navigation</span>
+            <button onclick="toggleMenu()" class="text-white p-2">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <a href="index.html" class="text-2xl font-semibold text-primary">Home</a>
+        <a href="about.html" class="text-2xl font-semibold hover:text-primary">About</a>
+        <a href="project.html" class="text-2xl font-semibold hover:text-primary">Project</a>
+        <a href="contact.html" class="text-2xl font-semibold hover:text-primary">Contact</a>
+    </div>
+</nav>
+
+<script>
+function toggleMenu() {
+    const sidebar = document.getElementById('mobile-sidebar');
+    const overlay = document.getElementById('menu-overlay');
+    sidebar.classList.toggle('translate-x-full');
+    sidebar.classList.toggle('translate-x-0');
+    
+    if (overlay.classList.contains('hidden')) {
+        overlay.classList.remove('hidden');
+        setTimeout(() => overlay.classList.add('opacity-100'), 10);
+    } else {
+        overlay.classList.remove('opacity-100');
+        setTimeout(() => overlay.classList.add('hidden'), 300);
+    }
+}
+</script>
 </div>
 </body></html>
