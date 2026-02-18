@@ -53,7 +53,7 @@
 <!-- Main Layout Container -->
 <div class="relative min-h-screen w-full flex flex-col overflow-hidden mesh-gradient">
 <!-- Navigation -->
-<header class="relative z-50 flex items-center justify-between px-6 py-6 lg:px-20">
+<header class="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-10 py-8 lg:px-24">
     <div class="flex items-center gap-3">
         <div class="size-10 flex items-center justify-center bg-primary rounded-lg shadow-[0_0_20px_rgba(37,209,244,0.4)]">
             <span class="material-symbols-outlined text-background-dark font-bold">terminal</span>
@@ -61,16 +61,16 @@
         <h2 class="text-xl font-bold tracking-tighter uppercase">Dev</h2>
     </div>
 
-    <nav class="hidden md:flex items-center gap-10">
-        <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
-        <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">About</a>
-        <a class="text-lg font-medium text-primary hover:text-primary transition-colors" href="project.html">Project</a>
-        <a class="text-lg font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+    <nav class="hidden md:flex items-center gap-12 px-8 py-3 hidden md:flex items-center glass rounded-full border-white/5">
+        <a class="text-lg font-medium  text-primary transition-colors" href="index.html">Home</a>
+        <a class="text-lg font-medium  hover:text-primary transition-colors" href="about.html">About</a>
+        <a class="text-lg font-medium   hover:text-primary transition-colors" href="project.html">Project</a>
+        <a class="text-lg font-medium  hover:text-primary transition-colors" href="contact.html">Contact</a>
     </nav>
 
     <div class="flex items-center gap-4">
-        <button class="text-black hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary border border-white/10 hover:bg-primary/10 hover:text-white transition-all text-sm font-bold">
-            Hire Me
+        <button class="hidden lg:flex items-center gap-2 text-s font-bold tracking-widest uppercase border-b border-white/20 pb-1 hover:border-primary hover:text-primary transition-all">
+            RESUME.PDF
         </button>
 
         <button onclick="toggleMenu()" class="lg:hidden flex items-center justify-center p-2 rounded-lg bg-primary/10 border border-primary/20 text-primary transition-all active:scale-95">
@@ -79,7 +79,7 @@
     </div>
 </header>
 <!-- Hero Content Section -->
-<main class="flex-1 flex flex-col items-center justify-center px-6 lg:px-20 py-12 relative">
+<main class="relative min-h-screen flex flex-col items-center justify-center px-6  lg:px-24 pt-32">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-7xl w-full">
 <!-- Left: Typography & CTA -->
 <div class="lg:col-span-6 flex flex-col gap-8 z-20">
@@ -155,7 +155,7 @@
 </div>
 </main>
 <!-- Feature Expertise Section (Brief Integration) -->
-<section class="relative z-10 px-6 lg:px-20 py-16 border-t border-white/5">
+<section class="relative z-10 px-6 lg:px-20 py-16 border-t border-white/5 ">
 <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="flex flex-col gap-4 p-8 rounded-2xl glass hover:border-primary/50 transition-all group">
 <span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">palette</span>
