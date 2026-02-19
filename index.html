@@ -15,6 +15,19 @@
             darkMode: "class",
             theme: {
                 extend: {
+                    keyframes: {
+                        floatRotate: {
+                        '0%, 100%': {
+                            transform: 'translateY(0px) rotate(0deg)'
+                        },
+                        '50%': {
+                            transform: 'translateY(-20px) rotate(3deg)'
+                        }
+                        }
+                    },
+                    animation: {
+                        floatRotate: 'floatRotate 6s ease-in-out infinite'
+                    },
                     colors: {
                         "primary": "#25d1f4",
                         "secondary": "#a855f7",
@@ -111,7 +124,7 @@
 <!-- Right: Futuristic Scene Area -->
 <div class="lg:col-span-6 relative flex justify-center items-center @container h-[300px] lg:h-[500px]">
 <!-- Main Image Placeholder (Avatar at Floating Desk) -->
-<div class="relative w-full h-full glass rounded-3xl overflow-hidden shadow-2xl border-white/5 bg-center bg-cover " data-alt="Futuristic 3D developer avatar sitting at a holographic desk with a glowing laptop" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDubYq0xdp-L5mTpTpOoz84Aqo7fhcrXw1ae-hO3b3jDvDB_JVmPGYkVwij1mS_bC8HqCF3WincYtxCzvEverke0U_YMLEekVYtb9UDgOI0XxUHfGwTRSrDj513OPyOL27Iq7Mr8SC2C9ysShVqhdSlxkkzSDFlo1_BLgEhalT3PwplFizkJjENCAtWHOB6n_L1zHeJHaBlaWBMkEorizYVWLxxiAXF-Fn6vBnqFKhmaU5cKzGkQFDTG7xT5T63hFs7CEHPOHNnEwK6');">
+<div class="animate-floatRotate hover:scale-105 transition duration-500 relative w-full h-full glass rounded-3xl overflow-hidden shadow-2xl border-white/5 bg-center bg-cover " data-alt="Futuristic 3D developer avatar sitting at a holographic desk with a glowing laptop" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDubYq0xdp-L5mTpTpOoz84Aqo7fhcrXw1ae-hO3b3jDvDB_JVmPGYkVwij1mS_bC8HqCF3WincYtxCzvEverke0U_YMLEekVYtb9UDgOI0XxUHfGwTRSrDj513OPyOL27Iq7Mr8SC2C9ysShVqhdSlxkkzSDFlo1_BLgEhalT3PwplFizkJjENCAtWHOB6n_L1zHeJHaBlaWBMkEorizYVWLxxiAXF-Fn6vBnqFKhmaU5cKzGkQFDTG7xT5T63hFs7CEHPOHNnEwK6');">
 <!-- Overlay gradient for integration -->
 <div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent"></div>
 <!-- Floating Code Snippet Card -->
