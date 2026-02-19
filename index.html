@@ -6,6 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Zakaria Mennis | DevPortfolio</title>
 <script src="script.js" defer type="module"></script>
+<script src="script1.js" defer type="module"></script>
+<script src="script.js" defer type="module"></script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -81,10 +83,10 @@
     </div>
 
     <nav class="hidden md:flex items-center gap-12 px-8 py-3 hidden md:flex items-center glass rounded-full border-white/5">
-        <a class="text-lg font-medium  hover:text-primary transition-colors" href="index.html">Home</a>
-        <a class="text-lg font-medium  hover:text-primary transition-colors" href="about.html">About</a>
-        <a class="text-lg font-medium   hover:text-primary transition-colors" href="project.html">Project</a>
-        <a class="text-lg font-medium  hover:text-primary transition-colors" href="contact.html">Contact</a>
+        <a class="text-lg font-medium  hover:text-primary transition-colors" href="">Home</a>
+        <a class="text-lg font-medium  hover:text-primary transition-colors" href="">About</a>
+        <a class="text-lg font-medium   hover:text-primary transition-colors" href="">Project</a>
+        <a class="text-lg font-medium  hover:text-primary transition-colors" href="">Contact</a>
     </nav>
 
     <div class="flex items-center gap-4">
@@ -98,7 +100,7 @@
     </div>
 </header>
 <!-- Hero Content Section -->
-<main class="bg-background-dark/80 min-h-screen flex flex-col items-center justify-center px-6  lg:px-24 pt-32 pb-12">
+<main class="bg-background-dark/100 min-h-screen flex flex-col items-center justify-center px-6  lg:px-24 pt-32 pb-12">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-7xl w-full">
 <!-- Left: Typography & CTA -->
 <div class="lg:col-span-6 flex flex-col gap-8 z-18">
@@ -162,7 +164,47 @@
 </div>
 </div>
 </main>
-<section class="relative z-10 px-6 lg:px-24 py-26 pt-20  border-white/5 bg-background-dark/80" id="projects">
+<!--about-->
+<div class="bg-background-dark/100 flex-1  md:px-20 lg:px-18 py-10 flex flex-col items-start" >
+<div class="w-full max-w-[1000px] flex flex-col gap-16">
+<!-- Section: About Me -->
+<section id="about">
+<div class="glass-morphism rounded-2xl p-8 md:p-12 relative overflow-hidden">
+<span class="text-primary font-bold tracking-[0.4em] uppercase text-[10px] neon-text-cyan">Who I Am</span>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+<div class="lg:col-span-2 flex flex-col gap-6">
+    <div class="flex flex-col gap-4">
+    <h2 class="text-6xl font-bold text-white flex items-start gap-4">
+                                            Profile Overview
+                                        </h2> </div>
+<p class="text-slate-300 text-xl leading-relaxed">
+                                            I am a <span class="text-primary font-semibold">Frontend Developer</span> I specialize in building scalable web solutions and seamless, user-centric applications. I love turning complex problems into elegant, functional code.
+
+If an idea pops into my head, chances are I'll build it and ship it.
+
+My main tech stack is <span class="text-primary font-semibold">React,</span> <span class="text-primary font-semibold">JS,</span> <span class="text-primary font-semibold">Css,</span> <span class="text-primary font-semibold">Html,</span> and <span class="text-primary font-semibold">Tailwind</span>. I'm also deeply interested in system architecture and performance optimization.
+                                        </p>
+</div>
+<div class="lg:col-span-1 flex flex-col gap-1">
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-primary/20 bg-primary/5">
+<p class="text-slate-400 text-sm font-medium uppercase tracking-tighter">Experience</p>
+<p class="text-white text-3xl font-bold">1.5+ <span class="text-primary text-lg">Years</span></p>
+</div>
+
+<div class="mt-10 flex flex-col gap-2 rounded-xl p-6 border border-emerald-500/20 bg-emerald-500/5">
+<p class="text-slate-400 text-sm font-medium uppercase tracking-tighter">Satisfaction</p>
+<p class="text-white text-3xl font-bold">70% <span class="text-emerald-400 text-lg">Uptime</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></div>
+</div>
+<!-- project -->
+<section class="relative z-10 px-6 lg:px-24 py-26 pt-10 bg-background-dark/80" id="projects">
 <div class="max-w-8xl mx-auto">
 <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-24">
 <div class="flex flex-col gap-4">
