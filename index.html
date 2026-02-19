@@ -16,8 +16,9 @@
                 extend: {
                     colors: {
                         "primary": "#25d1f4",
-                        "background-light": "#f5f8f8",
-                        "background-dark": "#0a0f12", // Slightly darker for higher contrast
+                        "secondary": "#a855f7",
+                        "background-dark": "#020408",
+                        "background-light": "#f5f8f8", // Slightly darker for higher contrast
                     },
                     fontFamily: {
                         "display": ["Space Grotesk", "sans-serif"]
@@ -49,11 +50,11 @@
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+<body class=" dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
 <!-- Main Layout Container -->
 <div class="relative min-h-screen w-full flex flex-col overflow-hidden mesh-gradient">
 <!-- Navigation -->
-<header class="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-10 py-8 lg:px-24">
+<header class="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-8 py-6 lg:px-24">
     <div class="flex items-center gap-3">
         <div class="size-10 flex items-center justify-center bg-primary rounded-lg shadow-[0_0_20px_rgba(37,209,244,0.4)]">
             <span class="material-symbols-outlined text-background-dark font-bold">terminal</span>
@@ -62,14 +63,14 @@
     </div>
 
     <nav class="hidden md:flex items-center gap-12 px-8 py-3 hidden md:flex items-center glass rounded-full border-white/5">
-        <a class="text-lg font-medium  text-primary transition-colors" href="index.html">Home</a>
+        <a class="text-lg font-medium  hover:text-primary transition-colors" href="index.html">Home</a>
         <a class="text-lg font-medium  hover:text-primary transition-colors" href="about.html">About</a>
         <a class="text-lg font-medium   hover:text-primary transition-colors" href="project.html">Project</a>
         <a class="text-lg font-medium  hover:text-primary transition-colors" href="contact.html">Contact</a>
     </nav>
 
     <div class="flex items-center gap-4">
-        <button class="hidden lg:flex items-center gap-2 text-s font-bold tracking-widest uppercase border-b border-white/20 pb-1 hover:border-primary hover:text-primary transition-all">
+        <button class="hidden lg:flex items-center gap-2 text-sm font-bold tracking-widest uppercase border-b border-white/20 pb-1 hover:border-primary hover:text-primary transition-all">
             RESUME.PDF
         </button>
 
@@ -79,10 +80,10 @@
     </div>
 </header>
 <!-- Hero Content Section -->
-<main class="relative min-h-screen flex flex-col items-center justify-center px-6  lg:px-24 pt-32">
+<main class="bg-background-dark/80 min-h-screen flex flex-col items-center justify-center px-6  lg:px-24 pt-32 pb-12">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-7xl w-full">
 <!-- Left: Typography & CTA -->
-<div class="lg:col-span-6 flex flex-col gap-8 z-20">
+<div class="lg:col-span-6 flex flex-col gap-8 z-18">
 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
 <span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
 <span class="text-xs font-bold text-primary tracking-widest uppercase">Available for Hire</span>
@@ -90,32 +91,21 @@
 <div class="flex flex-col gap-4">
 <h1 class="text-6xl lg:text-8xl font-black leading-none tracking-tight">
                             Zakaria <br/>
-<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Mennis</span>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Mennis.</span>
 </h1>
-<h2 class="text-xl lg:text-2xl text-slate-400 font-light max-w-md">
+<h2 class="typing-text animate-typing text-xl lg:text-2xl text-slate-400 font-light max-w-md">
                             Frontend Developer &amp; Creative Technologist. Building <span class="text-white">immersive digital experiences</span> with futuristic.
                         </h2>
 </div>
 <div class="flex flex-wrap gap-4 pt-4">
-<button id="hireme1" class="group relative flex items-center justify-center rounded-lg h-14 px-10 bg-primary text-background-dark text-lg font-bold tracking-tight overflow-hidden hover:shadow-[0_0_30px_rgba(37,209,244,0.5)] transition-all">
+<button id="hireme1" class="group relative flex items-center justify-center rounded-full h-16 px-14 bg-primary text-background-dark text-sm font-black uppercase tracking-widest overflow-hidden hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(37,209,244,0.3)]">
 <span class="relative z-10">Hire Me</span>
 </button>
-<button id="viewwork" class="flex items-center justify-center rounded-lg h-14 px-10 bg-white/5 border border-white/10 hover:bg-white/10 text-lg font-bold tracking-tight glass transition-all">
+<button id="viewwork" class="lex items-center justify-center rounded-full h-16 px-14 glass border-white/10 hover:border-primary/50 text-sm font-black uppercase tracking-widest transition-all duration-300 hover:text-primary">
                             View Work
                         </button>
 </div>
 <!-- Tech Stack Pills -->
-<div class="flex flex-wrap gap-3 mt-8">
-<span class="glass px-4 py-2 rounded-full text-xs font-mono text-slate-400 uppercase tracking-widest flex items-center gap-2">
-<span class="text-primary">#</span> React.js
-                        </span>
-<span class="glass px-4 py-2 rounded-full text-xs font-mono text-slate-400 uppercase tracking-widest flex items-center gap-2">
-<span class="text-primary">#</span> Ecmascript
-                        </span>
-<span class="glass px-4 py-2 rounded-full text-xs font-mono text-slate-400 uppercase tracking-widest flex items-center gap-2">
-<span class="text-primary">#</span> Tailwind
-                        </span>
-</div>
 </div>
 <!-- Right: Futuristic Scene Area -->
 <div class="lg:col-span-6 relative flex justify-center items-center @container h-[500px] lg:h-[700px]">
@@ -154,39 +144,205 @@
 </div>
 </div>
 </main>
-<!-- Feature Expertise Section (Brief Integration) -->
-<section class="relative z-10 px-6 lg:px-20 py-16 border-t border-white/5 ">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="flex flex-col gap-4 p-8 rounded-2xl glass hover:border-primary/50 transition-all group">
-<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">palette</span>
-<h3 class="text-xl font-bold">UI/UX Design</h3>
-<p class="text-slate-400 text-sm leading-relaxed">Crafting intuitive interfaces using modern principles of glassmorphism and motion design.</p>
+<section class="relative z-10 px-6 lg:px-24 py-26 pt-6  border-white/5 bg-background-dark/80" id="projects">
+<div class="max-w-8xl mx-auto">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-24">
+<div class="flex flex-col gap-4">
+<span class="text-primary font-bold tracking-[0.4em] uppercase text-[10px] neon-text-cyan">Selected Works Portfolio</span>
+<h2 class="text-6xl lg:text-8xl font-bold tracking-tighter">PROJECTS<span class="text-primary">.</span></h2>
 </div>
-<div class="flex flex-col gap-4 p-8 rounded-2xl glass hover:border-primary/50 transition-all group">
-<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">code</span>
-<h3 class="text-xl font-bold">Frontend Engineering</h3>
-<p class="text-slate-400 text-sm leading-relaxed">Building robust, scalable applications with React and high-performance frontend logic.</p>
 </div>
-<div class="flex flex-col gap-4 p-8 rounded-2xl glass hover:border-primary/50 transition-all group">
-<span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">view_in_ar</span>
-<h3 class="text-xl font-bold">Motion & Interaction</h3>
-<p class="text-slate-400 text-sm leading-relaxed">Enhancing frontend experiences with motion design, micro-interactions, and fluid UI behavior.</p>
+<div class="flex overflow-x-auto gap-24 no-scrollbar pb-10 -mx-8 lg:-mx-24 px-10 lg:px-24 snap-x">
+<div class="min-w-[450px] lg:min-w-[600px] snap-center group">
+<div class="relative aspect-[16/10] rounded-[40px] overflow-hidden glass border-white/10 mb-8 cursor-pointer group-hover:border-primary/40 transition-all duration-500">
+<img alt="3D Interface" class="absolute inset-0 w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" src="src/Screenshot 2026-02-04 at 10-43-52 Alvin's Pizzeria.png"/>
+
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+</div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-2">
+<h3 class="text-3xl font-bold tracking-tight">E-Commerce Food Interface</h3>
+<div class="flex gap-4">
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="min-w-[450px] lg:min-w-[600px] snap-center group">
+<div class="relative aspect-[16/10] rounded-[40px] overflow-hidden glass border-white/10 mb-8 cursor-pointer group-hover:border-primary/40 transition-all duration-500">
+<img alt="Rose Valley Hotel" class="absolute w-full h-full  object-cover bg-top grayscale opacity-6 group-hover:grayscale-0 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" src="src/src1/Screenshot 2026-02-04 at 10-48-58 tailwind cli.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-backg round-dark via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+</div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-2">
+<h3 class="text-3xl font-bold tracking-tight">Travel web site</h3>
+<div class="flex gap-4">
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
+<section class="relative px-6 lg:px-24 py-26 bg-background-dark/80 overflow-hidden" id="about">
+<div class="absolute inset-0 pointer-events-none">
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-[800px] bg-primary/5 rounded-full blur-[150px] animate-pulse-slow"></div>
+<div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 2px 2px, #25d1f4 1px, transparent 0); background-size: 40px 40px;"></div>
+</div>
+<div class="max-w-8xl mx-auto flex flex-col gap-32 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="flex flex-col gap-8 order-2 lg:order-1">
+<span class="text-primary font-bold tracking-[0.4em] uppercase text-[10px] neon-text-cyan">Technical Proficiency</span>
+<h2 class="text-5xl lg:text-7xl font-bold tracking-tighter leading-tight">Mastering the<br/><span class="text-primary neon-text-cyan">Tech Stack</span></h2>
+<p class="text-xl text-slate-400 leading-relaxed font-light">
+                        Building robust, scalable, and highly interactive web experiences using a diverse array of modern technologies and low-level languages.
+                    </p>
+<div class="grid grid-cols-2 gap-8 mt-4">
+<div class="flex flex-col gap-3">
+<span class="text-primary text-xs font-black tracking-widest uppercase">Frontend Core</span>
+<ul class="text-slate-500 text-sm space-y-2">
+<li>• React Ecosystem</li>
+<li>• Tailwind Architecture</li>
+<li>• JavaScript (ES6+)</li>
+</ul>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-secondary text-xs font-black tracking-widest uppercase">Systems &amp; Logic</span>
+<ul class="text-slate-500 text-sm space-y-2">
+<li>• C / C++ Performance</li>
+<li>• Python Data Handling</li>
+<li>• SQL Database Design</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="relative flex items-center justify-center py-20 order-1 lg:order-2">
+<div class="relative w-full max-w-[500px] aspect-square flex items-center justify-center">
+<div class="absolute inset-0 border border-primary/10 rounded-full animate-spin-slow"></div>
+<div class="absolute inset-[15%] border border-secondary/10 rounded-full animate-spin-reverse-slow"></div>
+<div class="grid grid-cols-3 gap-4 lg:gap-6 relative">
+<div class="flex flex-col gap-6 -translate-y-8">
+<div class="tech-node hex-grid-item animate-float group shadow-[0_0_20px_rgba(37,209,244,0.1)]">
+<img alt="React" class="size-10 lg:size-12 z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1Cw8dnhJLyH2dOV9T_s2jn_gNRUHefXz2apKS7OX1kc-cmc4IzbxTkw6Paq4GkZ2eoT4BkeZkutPWhvGdXUb4L4zNUr1TIt7fmIuW4aVZy4_rkyfbw-ltzMMUFxlhDI9uGe3-lU5YuORauoUbhVSyvov0GOi31nPsU5Cbr8iooiOBxO4x3qR4XIqDdxG7VjuyGPeP5FYUyO8-CZmeZtETKE_j-DBtp3YKqBxF5mHw95MkIyTh-pxk0xMTU6ypmp7J3il-UMn11AUV"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity"></div>
+</div>
+<div class="tech-node hex-grid-item animate-float-delayed group shadow-[0_0_20px_rgba(168,85,247,0.1)]">
+<span class="text-xl font-bold z-10 text-white/80 group-hover:text-white">C++</span>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity"></div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="tech-node hex-grid-item animate-float-delayed group shadow-[0_0_20px_rgba(37,209,244,0.1)]">
+<img alt="JavaScript" class="size-10 lg:size-12 z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyAbqpZR7xIJMVPi7GYzN9GuI9nNXlliSYCJjw3kdSpKzynHtB_iZ_x_7XTP5XkwPvJzvrPaXEmKF1_Cwyzmds1raym00vOERR2kT5Ix-I0nGvXGc-PhdUN9yh-Vh23uLKWwWZjclg7Id8cPRekodd_0ms6YURDx4K-ChBLXzDuGoNuQOLGpJqAPTUj2W7haEjSqoafmIW7U0vZak8KhpGXIZnYJ8Bu9GV-6fSMLa0zUP4hN_n_63465XKAivmqbHwFttFYNA2FMrX"/>
+<div class="absolute inset-0 bg-yellow-400/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity"></div>
+</div>
+<div class="tech-node hex-grid-item animate-float group bg-primary/10 border-primary shadow-[0_0_30px_rgba(37,209,244,0.3)]">
+<img alt="Tailwind" class="size-10 lg:size-12 z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByCRszEGu3dEWXy7XcyrgS--Yr36nqc35uX4LD3qQRryIFha2UiSvIS9dMZoif-o2q7Vlu80ryPAFHW-JbeCtMUG25eoxzb24ttplYKMEQnDgxP5xIrL-inskxLmj6T7capLf06yyBqP3u8kAygVWQdd81V1RMfAR2V9gSauhndqfNucMAFlsZa6-9AGHGMwFEv3FMWBwf53Xgag8Eqa2RbNrCRIPZkc91kgBwLbAzAl3odIq-YC92h4ezdOd_vxXUVj2ofPi7LyGn"/>
+<div class="absolute inset-0 bg-primary/20 blur-xl"></div>
+</div>
+<div class="tech-node hex-grid-item animate-float-delayed group shadow-[0_0_20px_rgba(168,85,247,0.1)]">
+<span class="text-xl font-bold z-10 text-white/80 group-hover:text-white">SQL</span>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity"></div>
+</div>
+</div>
+<div class="flex flex-col gap-6 -translate-y-8">
+<div class="tech-node hex-grid-item animate-float group shadow-[0_0_20px_rgba(37,209,244,0.1)]">
+<span class="text-xl font-bold z-10 text-white/80 group-hover:text-white">C</span>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity"></div>
+</div>
+<div class="tech-node hex-grid-item animate-float-delayed group shadow-[0_0_20px_rgba(168,85,247,0.1)]">
+<span class="text-xl font-bold z-10 text-white/80 group-hover:text-white">Py</span>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity"></div>
+</div>
+</div>
+<div class="absolute -top-10 right-0 tech-node hex-grid-item animate-float group scale-75 opacity-60 hover:opacity-100 transition-all">
+<span class="text-lg font-bold z-10 text-white/80">PHP</span>
+<div class="absolute inset-0 bg-primary/20 blur-lg"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-16">
+<div class="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
+<span class="text-secondary font-bold tracking-[0.4em] uppercase text-[10px] neon-text-purple">The Human Element</span>
+<h2 class="text-5xl lg:text-6xl font-bold tracking-tighter">Strategic Soft Skills</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-morphism p-10 rounded-[32px] group hover:border-primary/40 transition-all duration-500 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-7xl text-primary">psychology</span>
+</div>
+<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-8 border border-primary/20">
+<span class="material-symbols-outlined text-primary">lightbulb</span>
+</div>
+<h4 class="text-2xl font-bold mb-4 tracking-tight group-hover:text-primary transition-colors">Problem Solving</h4>
+<p class="text-slate-400 font-light leading-relaxed">Deconstructing complex technical challenges into elegant, efficient solutions with a focus on optimization.</p>
+<div class="mt-8 flex items-center gap-2">
+<span class="h-px flex-1 bg-white/10 group-hover:bg-primary/20 transition-colors"></span>
+<span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Core Strength</span>
+</div>
+</div>
+<div class="glass-morphism p-10 rounded-[32px] group hover:border-secondary/40 transition-all duration-500 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-7xl text-secondary">forum</span>
+</div>
+<div class="size-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-8 border border-secondary/20">
+<span class="material-symbols-outlined text-secondary">diversity_3</span>
+</div>
+<h4 class="text-2xl font-bold mb-4 tracking-tight group-hover:text-secondary transition-colors">Communication</h4>
+<p class="text-slate-400 font-light leading-relaxed">Bridging the gap between technical teams and stakeholders with clear, transparent dialogue and effective documentation.</p>
+<div class="mt-8 flex items-center gap-2">
+<span class="h-px flex-1 bg-white/10 group-hover:bg-secondary/20 transition-colors"></span>
+<span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Collaborative</span>
+</div>
+</div>
+<div class="glass-morphism p-10 rounded-[32px] group hover:border-primary/40 transition-all duration-500 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-7xl text-primary">published_with_changes</span>
+</div>
+<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-8 border border-primary/20">
+<span class="material-symbols-outlined text-primary">update</span>
+</div>
+<h4 class="text-2xl font-bold mb-4 tracking-tight group-hover:text-primary transition-colors">Agile Methodology</h4>
+<p class="text-slate-400 font-light leading-relaxed">Embracing iterative development, sprint planning, and rapid prototyping to deliver high-quality products on schedule.</p>
+<div class="mt-8 flex items-center gap-2">
+<span class="h-px flex-1 bg-white/10 group-hover:bg-primary/20 transition-colors"></span>
+<span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Process Focused</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Expertise Section (Brief Integration) -->
+</section>
+<section class="relative px-6 lg:px-24 py-48 bg-background-dark/80 border-white/5" id="contact">
+<div class="max-w-4xl mx-auto text-center flex flex-col items-center gap-14">
+<h2 class="text-7xl lg:text-[140px] font-black tracking-tighter leading-none">LET'S START <br/><span class="text-primary neon-text-cyan">A PROJECT.</span></h2>
+<div class="w-32 h-px bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+<p class="text-2xl text-slate-400 font-light max-w-2xl leading-relaxed">
+                Ready to transform your digital presence into a futuristic experience? Send a message and let's discuss your next breakthrough.
+            </p>
+</div>
+</section>
 <!-- Footer -->
-<footer class="mt-auto px-6 py-10 lg:px-20 border-t border-white/5">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-<p class="text-slate-500 text-sm">© 2024  Designed for the spatial web.</p>
-<div class="flex items-center gap-8">
-<a class="text-slate-400 hover:text-white transition-colors" href="https://www.linkedin.com/in/mennis-zakaria-0xxclauy">
-<span class="text-sm ">LinkedIn</span>
+ <footer class="px-6 py-8 lg:px-22 border-t border-white/5 bg-background-dark/90">
+<div class="max-w-8xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex flex-col gap-3 items-center md:items-start">
+<p class="text-slate-400 text-sm font-bold uppercase tracking-[0.3em]">© 2024 0xxclauy dev</p>
+<p class="text-slate-600 text-[10px] uppercase tracking-[0.5em]">Built with precision for the Spatial Era</p>
+</div>
+<div class="flex items-center gap-12">
+<a class="group text-slate-400 hover:text-primary transition-colors flex items-center gap-3 text-xs font-bold tracking-widest uppercase" href="https://www.instagram.com/0xxclauy/">
+                    Instagram<span class="material-symbols-outlined text-sm group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform">north_east</span>
 </a>
-<a class="text-slate-400 hover:text-white transition-colors" href="https://github.com/zikou058">
-<span class="text-sm ">GitHub</span>
+<a class="group text-slate-400 hover:text-primary transition-colors flex items-center gap-3 text-xs font-bold tracking-widest uppercase" href="https://www.linkedin.com/in/mennis-zakaria-0xxclauy">
+                    LinkedIn <span class="material-symbols-outlined text-sm group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform">north_east</span>
 </a>
-<a class="text-slate-400 hover:text-white transition-colors" href="https://www.instagram.com/0xxclauy/">
-<span class="text-sm ">Instagram</span>
+<a class="group text-slate-400 hover:text-primary transition-colors flex items-center gap-3 text-xs font-bold tracking-widest uppercase" href="https://github.com/zikou058">
+                    Github <span class="material-symbols-outlined text-sm group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform">north_east</span>
 </a>
 </div>
 </div>
